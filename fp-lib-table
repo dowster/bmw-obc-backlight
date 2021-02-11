@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name bmw-obc-backlight-footprints)(type KiCad)(uri ${KIPRJMOD}/bmw-obc-backlight-footprints.pretty)(options "")(descr ""))
+)

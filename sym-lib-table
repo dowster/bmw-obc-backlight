@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name bmw-obc-backlight-cache)(type Legacy)(uri ${KIPRJMOD}/bmw-obc-backlight-cache.lib)(options "")(descr ""))
+)
