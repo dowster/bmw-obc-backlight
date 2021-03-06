@@ -68,7 +68,7 @@ U 1 1 60238D1F
 P 750 1050
 F 0 "R1" H 820 1096 50  0000 L CNN
 F 1 "10000" H 820 1005 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 680 1050 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 680 1050 50  0001 C CNN
 F 3 "https://page.venkel.com/hubfs/Resources/Datasheets/CR-Series.pdf" H 750 1050 50  0001 C CNN
 F 4 "https://page.venkel.com/hubfs/Resources/Datasheets/CR-Series.pdf" H 750 1050 50  0001 C CNN "SMT Equiv"
 	1    750  1050
