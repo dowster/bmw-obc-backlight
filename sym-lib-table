@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name bmw-obc-backlight-cache)(type Legacy)(uri ${KIPRJMOD}/bmw-obc-backlight-cache.lib)(options "")(descr ""))
+  (lib (name bmw-obc-backlight-rescue)(type Legacy)(uri ${KIPRJMOD}/bmw-obc-backlight-rescue.lib)(options "")(descr ""))
 )

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/dowster/repos/bmw-obc-backlight/bmw-obc-backlight.sch</source>
+    <date>Sat 01 Jan 2022 05:11:22 PM CST</date>
+    <tool>Eeschema 5.1.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>bmw-obc-backlight.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>Conn_01x02</value>
+      <footprint>bmw-obc-backlight-footprints:TE_2Position_2.54mmPitch_Horizontal_Header</footprint>
+      <datasheet>https://media.digikey.com/pdf/Data%20Sheets/Tyco%20Electonics%20AMP%20PDFs/535676.pdf</datasheet>
+      <libsource lib="bmw-obc-backlight-rescue" part="Conn_01x02-Connector_Generic" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60235A24</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Castellated</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLC">0805</field>
+        <field name="LCSC">C2293</field>
+      </fields>
+      <libsource lib="bmw-obc-backlight-rescue" part="LED-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6023A561</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Castellated</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLC">0805</field>
+        <field name="LCSC">C2293</field>
+      </fields>
+      <libsource lib="bmw-obc-backlight-rescue" part="LED-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6023B59A</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10000</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <datasheet>https://page.venkel.com/hubfs/Resources/Datasheets/CR-Series.pdf</datasheet>
+      <fields>
+        <field name="JLC">1206</field>
+        <field name="LCSC">C17902</field>
+        <field name="SMT Equiv">https://page.venkel.com/hubfs/Resources/Datasheets/CR-Series.pdf</field>
+      </fields>
+      <libsource lib="bmw-obc-backlight-rescue" part="R-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60238D1F</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="bmw-obc-backlight-rescue" part="Conn_01x02-Connector_Generic">
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02-Connector_Generic</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="bmw-obc-backlight-rescue" part="LED-Device">
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED-Device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="bmw-obc-backlight-rescue" part="R-Device">
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R-Device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="bmw-obc-backlight-rescue">
+      <uri>/home/dowster/repos/bmw-obc-backlight/bmw-obc-backlight-rescue.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(D2-Pad1)">
+      <node ref="J1" pin="2"/>
+      <node ref="D2" pin="1"/>
+    </net>
+    <net code="2" name="Net-(D2-Pad2)">
+      <node ref="D2" pin="2"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="3" name="Net-(D1-Pad1)">
+      <node ref="R1" pin="1"/>
+      <node ref="D1" pin="1"/>
+    </net>
+    <net code="4" name="Net-(D1-Pad2)">
+      <node ref="J1" pin="1"/>
+      <node ref="D1" pin="2"/>
+    </net>
+  </nets>
+</export>
