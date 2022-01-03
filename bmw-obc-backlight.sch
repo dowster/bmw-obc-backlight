@@ -21,6 +21,9 @@ F 0 "J1" H 1730 992 50  0000 L CNN
 F 1 "Conn_01x02" H 1730 901 50  0000 L CNN
 F 2 "bmw-obc-backlight-footprints:TE_2Position_2.54mmPitch_Horizontal_Header" H 1650 1000 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Tyco%20Electonics%20AMP%20PDFs/535676.pdf" H 1650 1000 50  0001 C CNN
+F 4 "V" H 1650 1000 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 12" H 1650 1000 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1650 1000 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    1650 1000
 	1    0    0    -1  
 $EndComp

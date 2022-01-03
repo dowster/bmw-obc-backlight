@@ -2,8 +2,8 @@
 <export version="D">
   <design>
     <source>/home/dowster/repos/bmw-obc-backlight/bmw-obc-backlight.sch</source>
-    <date>Sat 01 Jan 2022 05:11:22 PM CST</date>
-    <tool>Eeschema 5.1.6</tool>
+    <date>Sun 02 Jan 2022 11:10:54 PM CST</date>
+    <tool>Eeschema 5.1.9+dfsg1-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title/>
